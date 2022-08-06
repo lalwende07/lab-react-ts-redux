@@ -14,7 +14,6 @@ const Posts: React.FC = () => {
     const localOrStateNumber = () => localStorage.getItem('number') || NumberOfPosts;
     const localNumber = localOrStateNumber();
 
-
     useEffect(() => {
         const getPosts = async () => {
             const response = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${localNumber}`);
@@ -26,13 +25,12 @@ const Posts: React.FC = () => {
         getPosts();
     }, [localNumber]);
 
-    const onChange = (e:React.ChangeEvent<HTMLInputElement>) => {
+    const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setNumberOfPosts(+e.target.value)
 
         //save in localStorage number selected
         localStorage.setItem('number', e.target.value)
-    }
-
+    };
     return (
         <div className="posts-container">
             <h1>Page Principale</h1>
