@@ -23,10 +23,12 @@
     "react-redux": "latest",
     "react-router-dom": "^6.3.0",
     "react-scripts": "latest",
+    "react-toastify": "^9.0.8",
     "redux": "^4.2.0",
     "styled-components": "latest",
     "typescript": "latest",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "xstate": "^4.33.0"
   },
   "scripts": {
     "start": "react-scripts start",

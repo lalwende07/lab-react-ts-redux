@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import React, { FunctionComponent, useState, useEffect } from 'react';
 import Posts from './pages/Posts';
 import Post from './pages/Post';
+import Address from './pages/Address';
 
 const App: FunctionComponent = () => {
 
@@ -11,6 +12,7 @@ const App: FunctionComponent = () => {
                 <Routes>
                     <Route path='/' element={<Posts/>} />
                     <Route path='/:id' element={<Post/>} />
+                    <Route path='/address' element={<Address/>} />
                 </Routes>
             </BrowserRouter>
         </div>

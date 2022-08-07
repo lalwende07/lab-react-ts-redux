@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import PostsList from "../components/PostsList";
 import '../css/posts.css';
 
-
+import PostsList from "../components/PostsList";
 import { Publish } from "../interfaces/Publish";
 
 
